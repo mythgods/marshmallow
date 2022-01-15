@@ -18612,6 +18612,13 @@ h6, .h6 {
   top: 0;
 }
 
+.mainvideo {
+  width: 800px;
+  height: 450px;
+  margin: 25px;
+  margin: 0 auto;
+}
+
 body,
 html {
   overflow-x: hidden;
