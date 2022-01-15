@@ -18613,10 +18613,12 @@ h6, .h6 {
 }
 
 .mainvideo {
-  width: 800px;
-  height: 450px;
-  margin: 25px;
-  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 body,
