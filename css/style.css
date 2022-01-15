@@ -18613,7 +18613,7 @@ h6, .h6 {
 }
 
 .mainvideo {
-  position: fixed;
+  position: relative;
   right: 0;
   bottom: 0;
   min-width: 100%;
