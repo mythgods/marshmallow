@@ -27,6 +27,8 @@
 /*-------------------------------------------------------------------*/
 /* === Import Bootstrap functions and variables === */
 /*-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 /* === Import template variables === */
 /*-------------------------------------------------------------------*/
 /* === SCSS Compass Functions === */
@@ -12504,12 +12506,21 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 2.9rem !important;
+  font-family: 'Permanent Marker', cursive;
   line-height: inherit;
   white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 2.5rem !important;
+  }
+}
+
+.brandlogo {
+  font-size: 5rem !important;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -12536,8 +12547,6 @@ input[type="button"].btn-block {
 
 .navbar-text {
   display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .navbar-collapse {
@@ -18507,9 +18516,11 @@ h6, .h6 {
     padding: .625rem;
   }
 }
-
+.nav-link {
+  font-size: 1.5rem !important;
+}
 .navbar .navbar-nav .nav-item .nav-link.active {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
 }
 
@@ -18613,30 +18624,48 @@ h6, .h6 {
 }
 
 .mainvideo {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+.crazynav-bg {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.crazynav-no-bg {
+  background: transparent;
+}
+
+.videocontainer {
+  background: rgb(94,118,142);
+  background: radial-gradient(circle, rgba(94,118,142,1) 0%, rgba(177,138,112,1) 15%, rgba(165,190,145,1) 22%, rgba(128,169,167,1) 36%, rgba(165,190,145,1) 45%, rgba(250,142,70,1) 55%, rgba(250,142,70,1) 63%, rgba(254,132,79,1) 66%, rgba(255,40,0,1) 100%);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 9.5rem;
+}
+
+@media (max-width: 991px) {
+  .videocontainer {
+    padding: 5rem 0 0 0;
+    margin: 0px;
+  }
+  .mainvideo {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 body,
 html {
   overflow-x: hidden;
-}
-
-.home {
-  background: url("../images/banner-bg.svg");
-  background-repeat-y: no-repeat;
-  background-position: 0 -50px;
-  padding-top: 103px;
-}
-
-@media (max-width: 991px) {
-  .home {
-    padding-top: 71px;
-  }
 }
 
 .main-banner {
@@ -18648,7 +18677,7 @@ html {
 @media (max-width: 991px) {
   .main-banner {
     padding: 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 }
 
@@ -19004,7 +19033,7 @@ section {
 .flipster-custom-nav {
   padding-left: 0;
   list-style: none;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 .flipster-custom-nav .flipster-custom-nav-item {
