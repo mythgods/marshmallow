@@ -18517,7 +18517,8 @@ h6, .h6 {
   }
 }
 .nav-link {
-  font-size: 1.5rem !important;
+  /* mythgods was here */
+  font-size: 1.4rem !important;
 }
 .navbar .navbar-nav .nav-item .nav-link.active {
   background: rgba(255, 255, 255, 0.2);
